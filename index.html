@@ -4,22 +4,22 @@
     <meta charset="utf-8" />
     <title>common elements</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
-    <!-- Use Following for direct project reference-->
-    <!--    <link rel="stylesheet" href="common-elements.css" /> 
-    -->
-    
-    <!--Production CDN for Demo-->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/nirmalkrishnav/common-elements/v2/common-elements.css" />
 
+    <!-- Use Following for direct project reference-->
+    <link rel="stylesheet" href="common-elements.css" />
+
+
+    <!--Production CDN for Demo
+    <link rel="stylesheet" href="https://cdn.rawgit.com/nirmalkrishnav/Common-Elements-2/a18ba9ae/common-elements.css" />
+        -->
 </head>
 <body>
-    
+
     <div class="container">
         <div class="jumbotron">
-         <h1>Common Elements 2</h1>
-         <p>This is a template showcasing the elements style and sample code included in ce2. Use it as a starting point to create something more Awesome!.</p>
-        </div>       
+            <h1>Common Elements 2</h1>
+            <p>This is a template showcasing the elements style and sample code included in ce2. Use it as a starting point to create something more Awesome!.</p>
+        </div>
         <h3>Buttons</h3>
         <hr />
         <button class="btn btn-lg ce-btn-lg ce-btn-green">
@@ -70,6 +70,14 @@
 
 
         <button class="btn btn-lg ce-btn-lg ce-btn-green ce-btn-lg-icon">
+
+            <i class="glyphicon glyphicon-home ce-btn-icon"></i>
+
+            Home
+        </button>
+
+
+        <button class="btn btn-lg ce-btn-lg ce-btn-green ce-btn-lg-icon" disabled="disabled">
 
             <i class="glyphicon glyphicon-home ce-btn-icon"></i>
 
@@ -170,6 +178,11 @@
         <button class="btn btn-sm ce-btn-sm ce-btn-secondary">
             Extra Small Secondary Button
         </button>
+
+        <button class="btn btn-sm ce-btn-sm ce-btn-secondary" disabled="disabled">
+            Disabled Button
+        </button>
+
         <hr />
         <h3>Text Buttons</h3>
         <button class="ce-btn-text">
@@ -192,7 +205,138 @@
         </xmp>
 
 
-    </div>
+        <hr />
+        <h3>Forms</h3>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="ce-form">
+                    <label>Name<span class="font-red">*</span></label>
+                    <input type="text" />
+                    <div class="required"><span></span></div>
+                </div>
+                <div class="ce-form">
+                    <label>Email<span class="font-red">*</span></label>
+                    <input type="email" class="throw-error" />
+                    <div class="required"><span>Required</span></div>
+                </div>
+                <div class="ce-form">
+                    <label>Date of Birth<span class="font-red">*</span></label>
+                    <div class="input-group ce-text-icon">
+
+                        <input type="text" class="form-control" placeholder="Search" />
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-calendar"></i></button>
+                        </div>
+                    </div>
+                    <div class="required"><span></span></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="ce-form">
+                    <label>Number</label>
+                    <input type="tel" />
+                    <div class="required"><span></span></div>
+                </div>
+
+                <div class="ce-form">
+                    <label>Select</label>
+                    <div class="dropdown ce-dropdown">
+                        <button class="btn" type="button" data-toggle="dropdown">
+                            <span class="button-text">Fruits</span>
+                            <div class="glyphicon glyphicon-chevron-down ce-dropdown-icon"></div>
+                        </button>
+                        <ul class="dropdown-menu ce-dropdown-menu">
+                            <li><a href="">Apple</a></li>
+                            <li><a href="">Mango</a></li>
+                            <li><a href="">Grape</a></li>
+                        </ul>
+                        <div class="required"><span></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <small>Coming Soon..</small>
+            </div>
+            <div class="col-md-6">
+                <div class="ce-form">
+                    <label>Gender</label>
+                    <input type="radio" name="gender" /> Female
+                    <input type="radio" name="gender" /> Male
+                    <div class="required"><span></span></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+
+                <div class="ce-form">
+                    <label><input type="checkbox" /> Remember me</label>
+
+                    <div class="required"><span></span></div>
+                </div>
+            </div>
+
+
+        </div>
+        <hr />
+        <h3>Tables</h3>
+
+        <table class="table ce-table">
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th data-type="number">Contact</th>
+                    <th>Country</th>
+                    <th data-type="button">Call</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td data-type="number">8956 2356 22612 </td>
+                    <td>Germany</td>
+                    <td data-type="button"><i class="glyphicon glyphicon-phone font-light-green"></i></td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td data-type="number">1232312 123</td>
+                    <td>Mexico</td>
+                    <td data-type="button"><i class="glyphicon glyphicon-phone font-light-green"></i></td>
+
+                </tr>
+                <tr>
+                    <td>Ernst Handel</td>
+                    <td data-type="number">123122 123231 12</td>
+                    <td>Austria</td>
+                    <td data-type="button"><i class="glyphicon glyphicon-phone font-light-green"></i></td>
+
+                </tr>
+                <tr>
+                    <td>Island Trading</td>
+                    <td data-type="number">464 564654</td>
+                    <td>UK</td>
+                    <td data-type="button"><i class="glyphicon glyphicon-phone font-light-green"></i></td>
+
+                </tr>
+                <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td data-type="number">4535 55252</td>
+                    <td>Canada</td>
+                    <td data-type="button"><i class="glyphicon glyphicon-phone font-light-green"></i></td>
+
+                </tr>
+                <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td data-type="number">654 5645636</td>
+                    <td>Italy</td>
+                    <td data-type="button"><i class="glyphicon glyphicon-phone font-light-green"></i></td>
+
+                </tr>
+            </tbody>
+        </table>
+
+
+
 
 
 </body>
@@ -200,3 +344,4 @@
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
