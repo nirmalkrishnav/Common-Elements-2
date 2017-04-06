@@ -1,0 +1,303 @@
+/* --------------------------------------------------------
+Common elements
+version: 1.0
+Creation: 05-09-2016
+author: Nirmal Krishna Venkatraman
+email: nirmal.k@orioninc.com
+----------------------------------------------------------*/
+xmp {
+    border: 1px solid #dedede;
+    background-color: #f9f9f9;
+    color: #333;
+    word-break: break-all;
+    word-break: break-word;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 5px !important;
+    background-color: #f9f9f9 !important;
+}
+
+*::-webkit-scrollbar {
+    width: 7px !important;
+    height: 7px !important;
+    background-color: #F5F5F5 !important;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px !important;
+    background-color: #c5c5c5 !important;
+}
+
+html {
+    background-color: #f0f0f0;
+}
+
+body {
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: #005EB8;
+    font-size: 14px;
+}
+
+    a:visited, a:hover {
+        color: #093b76;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+/*Border*/
+.border-common-blue {
+    border-color: #00338D;
+}
+
+.border-medium-blue {
+    border-color: #005EB8;
+}
+
+.border-light-blue {
+    border-color: #0091DA;
+}
+
+/*Secondary*/
+.border-violet {
+    border-color: #483698;
+}
+
+.border-purple {
+    border-color: #470A68;
+}
+
+.border-light-purple {
+    border-color: #6D2077;
+}
+
+.border-green {
+    border-color: #00A3A1;
+}
+
+/*Tertiary*/
+.border-dark-green {
+    border-color: #009A44;
+}
+
+.border-light-green {
+    border-color: #43B02A;
+}
+
+.border-yellow {
+    border-color: #EAAA00;
+}
+
+.border-orange {
+    border-color: #F68D2E;
+}
+
+.border-red {
+    border-color: #BC204B;
+}
+
+.border-pink {
+    border-color: #C6007E;
+}
+/*font color*/
+/*Primary*/
+
+.font-333 {
+    color: #333333;
+}
+
+.font-common-blue {
+    color: #00338D;
+}
+
+.font-medium-blue {
+    color: #005EB8;
+}
+
+.font-light-blue {
+    color: #0091DA;
+}
+
+/*Secondary*/
+.font-violet {
+    color: #483698;
+}
+
+.font-purple {
+    color: #470A68;
+}
+
+.font-light-purple {
+    color: #6D2077;
+}
+
+.font-green {
+    color: #00A3A1;
+}
+
+/*Tertiary*/
+.font-dark-green {
+    color: #009A44;
+}
+
+.font-light-green {
+    color: #43B02A;
+}
+
+.font-yellow {
+    color: #EAAA00;
+}
+
+.font-orange {
+    color: #F68D2E;
+}
+
+.font-red {
+    color: #BC204B;
+}
+
+.font-pink {
+    color: #C6007E;
+}
+
+
+/*button lg sm xs*/
+.ce-btn-lg {
+    border-radius: 2px;
+    font-size: 16px;
+    height: 46px;
+    font-weight: bold;
+}
+
+.ce-btn-sm {
+    border-radius: 2px;
+    font-size: 14px;
+    height: 36px;
+    font-weight: bold;
+}
+
+.ce-btn-xs {
+    border-radius: 2px;
+    font-size: 12px;
+    height: 26px;
+    font-weight: bold;
+}
+
+/*icon buttons*/
+
+.ce-btn-lg-icon {
+    padding-left: 0;
+}
+
+    .ce-btn-lg-icon .ce-btn-icon::before {
+        padding: 13px 14px 14px;
+    }
+
+
+
+
+.ce-btn-sm-icon {
+    padding-left: 0;
+}
+
+    .ce-btn-sm-icon .ce-btn-icon::before {
+        padding: 9px 10px 11px;
+    }
+
+
+
+.ce-btn-xs-icon {
+    padding-left: 0;
+}
+
+    .ce-btn-xs-icon .ce-btn-icon::before {
+        padding: 5px 7px 6px;
+    }
+
+
+
+/*buttons*/
+.ce-btn-green {
+    color: #fff;
+    background-color: #44b028;
+    border-color: #44b028;
+    transition: 0.2s;
+}
+
+    .ce-btn-green:hover, .ce-btn-green:focus, .ce-btn-green:active {
+        color: #fff;
+        background-color: #3c9020;
+        transition: 0.2s;
+    }
+
+    /*for icons*/
+    .ce-btn-green .ce-btn-icon::before {
+        background-color: #3e901c;
+        border-right: 1px solid #3e901c;
+        color: #89cc75;
+    }
+
+    .ce-btn-green:hover .ce-btn-icon::before {
+        border-right: 1px solid #2f7119;
+    }
+
+
+.ce-btn-neutral {
+    color: #fff;
+    background-color: #005eb8;
+    border-color: #005eb8;
+    transition: 0.2s;
+}
+
+    .ce-btn-neutral:hover, .ce-btn-neutral:focus, .ce-btn-neutral:active {
+        color: #fff;
+        background-color: #0f4d97;
+        transition: 0.2s;
+    }
+/*for icons*/
+
+.ce-btn-secondary {
+    color: #333;
+    background-color: #d7d7d7;
+    border-color: #d7d7d7;
+    transition: 0.2s;
+}
+
+    .ce-btn-secondary:hover, .ce-btn-secondary:focus, .ce-btn-secondary:active {
+        color: #fff;
+        background-color: #c5c5c5;
+        transition: 0.2s;
+    }
+/*for icons*/
+
+
+
+/*dropdown button*/
+.ce-btn-dd {
+    padding-right: 30px;
+}
+
+    .ce-btn-dd .glyphicon {
+        left: 25%;
+        top: 3px;
+    }
+/*text button*/
+.ce-btn-text {
+    background: transparent;
+    border: 0;
+    font-size: 16px;
+    color: #767676;
+    font-weight: bold;
+    outline: none;
+}
+
+    .ce-btn-text .glyphicon {
+        color: #43b02a;
+    }
